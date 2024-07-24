@@ -1,3 +1,55 @@
-h1 {
-  color: red;
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.welcome {
+  display: flex;
+  height: 100vh;
+}
+
+.sideshow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("assets/sideshow-background.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.3);
+  width: 100%;
+  height: 16%;
+  margin-top: 25%;
+}
+
+.odin-logo {
+  height: 70%;
+}
+
+.odin {
+  font-size: 120px;
+  font-family: "Anton SC", sans-serif;
+}
+
+.credits {
+  margin-bottom: 8px;
+}
+
+.credit-link {
+  color: white;
 }

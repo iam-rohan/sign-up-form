@@ -4,44 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- LOGO: https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png -->
-    <!-- Image:https://images.unsplash.com/photo-1721296375090-f8cb95f5aeac?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D -->
-    <div class="sideshow">
-      <div class="logo"></div>
-      <div class="credits">
-        Photo by <a href="https://unsplash.com/@bylukemiller" class="credit-link" target="_blank">Luke</a> on
-        <a href="https://unsplash.com/photos/a-view-of-the-moon-from-a-distance-u2QG9pHxRSE" class="credit-link" target="_blank">Unsplash</a>
+    <div class="welcome">
+      <div class="sideshow">
+        <div class="logo"><img src="assets/odin-logo.png" alt="odin" class="odin-logo" /><span class="odin">ODIN</span></div>
+        <div class="credits">
+          Photo by <a href="https://unsplash.com/@bylukemiller" class="credit-link" target="_blank">Luke</a> on
+          <a href="https://unsplash.com/photos/a-view-of-the-moon-from-a-distance-u2QG9pHxRSE" class="credit-link" target="_blank">Unsplash</a>
+        </div>
       </div>
-    </div>
-    <div class="main-body">
-      <h3 class="persuation">
-        This is not a real online service! You know you nedd something like this in your life you realize your deepest dreams. Sign up <i>now</i> to
-        get started.
-      </h3 class="persuation">
-      <h3>You know you want to.</h3>
+      <div class="main-body">
+        <h3 class="persuation">
+          This is not a real online service! You know you nedd something like this in your life you realize your deepest dreams. Sign up <i>now</i> to
+          get started.
+        </h3>
+        <h3>You know you want to.</h3>
 
-      <form action="#" method="post">
-        <legend class="form-intro">Let's do this!</legend>
-        <label for="fname">First Name</label>
-        <input type="text" name="user_fname" id="fname">
-        <label for="lname">Last Name</label>
-        <input type="text" name="user_lname" id="lname">
-        <label for="mail">Email</label>
-        <input type="email" name="user_email" id="mail">
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="user_phone" id="phone" max="10" min="10">
-        <label for="password">Password</label>
-        <input type="password" name="user_password" id="password">
-        <label for="cpassword">Confirm Password</label>
-        <input type="password" name="confirm_password" id="cpassword">
-        <button type="submit" class="submit-btn btn">Create Account</button>
-      </form>
+        <form action="#" method="post">
+          <legend class="form-intro">Let's do this!</legend>
+          <label for="fname">First Name</label>
+          <input type="text" name="user_fname" id="fname" />
+          <label for="lname">Last Name</label>
+          <input type="text" name="user_lname" id="lname" />
+          <label for="mail">Email</label>
+          <input type="email" name="user_email" id="mail" />
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="user_phone" id="phone" max="10" min="10" />
+          <label for="password">Password</label>
+          <input type="password" name="user_password" id="password" />
+          <label for="cpassword">Confirm Password</label>
+          <input type="password" name="confirm_password" id="cpassword" />
+          <button type="submit" class="submit-btn btn">Create Account</button>
+        </form>
 
-      <div class="login-option">
-        Already have an account? <a href="#">Log in</a>
+        <div class="login-option">Already have an account? <a href="#">Log in</a></div>
       </div>
     </div>
   </body>
