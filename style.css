@@ -1,12 +1,18 @@
+/* FONT FOR ODIN LOGO */
 .anton-sc-regular {
   font-family: "Anton SC", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+:root {
+  --main-body-padding: 70px;
+}
+
 body {
   margin: 0;
-  padding: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 .welcome {
@@ -14,6 +20,7 @@ body {
   height: 100vh;
 }
 
+/* SIDESHOW SECTION */
 .sideshow {
   display: flex;
   flex-direction: column;
@@ -52,4 +59,115 @@ body {
 
 .credit-link {
   color: white;
+}
+
+/* MAIN BODY SECTION */
+.main-body {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upper-right {
+  padding: var(--main-body-padding);
+  margin-top: 5%;
+}
+
+.persuation {
+  font-size: 1.5rem;
+  padding: 0 30% 0 0;
+  font-weight: 700;
+}
+
+.form-area {
+  background-color: white;
+  padding: 48px 30% 30px var(--main-body-padding);
+}
+
+.form-intro {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+.label-input {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-input label {
+  margin-bottom: 4px;
+}
+
+.label-input input {
+  font-size: 1.2rem;
+  color: rgb(34, 34, 34);
+  width: 80%;
+  height: 36px;
+  margin-bottom: 16px;
+  padding: 2px;
+  box-sizing: border-box;
+  border: 1px solid #dfe5f1;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.label-input input:focus {
+  border-color: blue;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+  outline: none;
+}
+
+.label-input input:invalid {
+  border-color: rgb(255, 79, 79);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.submit-btn {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 800;
+  width: 20%;
+  height: 6%;
+  margin: 3% var(--main-body-padding) 2%;
+  background-color: #1e1d4d;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.submit-btn:active {
+  transform: scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.login-option {
+  margin: 0 var(--main-body-padding);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 8%;
+}
+
+.login-link {
+  text-decoration: none;
+  color: rgb(124, 39, 39);
 }
